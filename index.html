@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>To Do List</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="main.js"></script>
+	<title>To Do</title>
 </head>
 <body>
-	<div id="container">
-		<h1>To Do</h1>
-		<div id="task-1">
-			<input type="button" id="task-1-delete" value="x">
-			<input type="checkbox" id="task-1-status">
-			<span id="task-1-name">Get Groceries</span>
+	<div id="todo-list">
+		<h1 id="todo-header">To Do</h1>
+		<div id="task-list">
+			<div id="task-1">
+				<input type="checkbox" id="task1-status"/>
+				<button id="task1-delete">x</button>
+				<span id="task1-name">Get Groceries</span>
+			</div>
 		</div>
-
-		<input type="text" id="task-input" placeholder="Enter Task Here">
-		<input type="button" id="submit-task" value="Submit Task">		
+		<br>
+		<div id="task-input">
+			<input type="text" id="task-name" placeholder="Enter task here.">
+			<button id="submit-task">Submit Task</button>	
+		</div>	
 	</div>
-	<div id="dicks"></div>
 </body>
+<footer>
+	<script type="text/javascript" src="./index.js"></script>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</footer>
 </html>
